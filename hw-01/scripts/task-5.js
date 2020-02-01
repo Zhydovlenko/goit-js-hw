@@ -33,6 +33,7 @@ switch (country) {
     cost = 0;
 }
 if (cost !== 0) {
+  country = country[0].toUpperCase() + country.slice(1).toLowerCase();
   alert(`Доставка в ${country} будет стоить ${cost} кредитов`);
 } else {
   alert('В вашей стране доставка не доступна');

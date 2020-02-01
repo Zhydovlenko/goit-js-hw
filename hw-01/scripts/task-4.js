@@ -15,6 +15,7 @@ if (input === null) {
     alert('Недостаточно средств на счету!');
   } else {
     const rest = credits - totalPrice;
-    alert(`Вы купили ${quantity} дроидов, на счету осталось ${rest} кредитов.`);
+    const message = `Вы купили ${quantity} дроидов, на счету осталось ${rest} кредитов.`;
+    alert(message);
   }
 }
