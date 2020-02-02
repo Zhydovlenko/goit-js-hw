@@ -1,17 +1,16 @@
 'use strict';
 
-const formatString = function(string) {
-  if (string) {
-    if (string.length > 40) {
-      return string.slice(0, 40) + '...';
-    }
-    return string;
-  }
-};
+// const formatString = function(string) {
+//   if (string) {
+//     if (string.length > 40) {
+//       return string.slice(0, 40) + '...';
+//     }
+//     return string;
+//   }
+// };
 
-// стрелочная функция
-// const formatString = string =>
-//   string.length > 40 ? `${string.slice(0, 41)}...` : string;
+const formatString = (string, maxLength = 40) =>
+  string.length > maxLength ? `${string.slice(0, maxLength - 1)}...` : string;
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
