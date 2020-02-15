@@ -3,7 +3,6 @@
 const countTotalSalary = function(employees) {
   let total = 0;
   const employeesValues = Object.values(employees);
-  console.log(employeesValues);
 
   employeesValues.forEach(value => {
     total += value;
